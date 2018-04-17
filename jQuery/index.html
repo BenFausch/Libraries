@@ -1,433 +1,433 @@
 <html>
    <head>
       <link rel="stylesheet" type="text/css" href="../css/find.css" media="all">
-  
-    <script
-  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-  crossorigin="anonymous"></script>
-    <script src="../js/find.js"></script>
+      <link rel="shortcut icon" href="../favicon.ico" />
+      <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+      crossorigin="anonymous"></script>
+      <script src="../js/find.js"></script>
    </head>
    <body>
       <h1>JQuery Documentation</h1>
       <input type="text" id="searchTools" onkeyup="searchBookmarks()" placeholder="Search for something">
       <div class="toc"><h2>Table of Contents</h2>
          <label for="TOC">Expand <span id="toc-span">
-         +</span></label><input name="toc" type="checkbox" id="TOC">
-         <ul><li><a href="#category core">Core</a></li><ul>
-         <li><a href="#jQuery.holdReady">jQuery.holdReady</a></li>
-         <li><a href="#jQuery.when">jQuery.when</a></li>
-         <li><a href="#jQuery.sub">jQuery.sub</a></li>
-         <li><a href="#jQuery.noConflict">jQuery.noConflict</a></li>
-         <li><a href="#jQuery">jQuery</a></li>
-         <li><a href="#jQuery">jQuery</a></li>
-         <li><a href="#jQuery">jQuery</a></li>
-         </ul><li><a href="#category selectors">Selectors</a></li><ul>
-         <li><a href="#focus">focus</a></li>
-         <li><a href="#selected">selected</a></li>
-         <li><a href="#checked">checked</a></li>
-         <li><a href="#disabled">disabled</a></li>
-         <li><a href="#enabled">enabled</a></li>
-         <li><a href="#file">file</a></li>
-         <li><a href="#button">button</a></li>
-         <li><a href="#reset">reset</a></li>
-         <li><a href="#image">image</a></li>
-         <li><a href="#submit">submit</a></li>
-         <li><a href="#checkbox">checkbox</a></li>
-         <li><a href="#radio">radio</a></li>
-         <li><a href="#password">password</a></li>
-         <li><a href="#text">text</a></li>
-         <li><a href="#input">input</a></li>
-         <li><a href="#only-child">only-child</a></li>
-         <li><a href="#last-child">last-child</a></li>
-         <li><a href="#first-child">first-child</a></li>
-         <li><a href="#nth-child">nth-child</a></li>
-         <li><a href="#attributeContainsPrefix">attributeContainsPrefix</a></li>
-         <li><a href="#attributeContainsWord">attributeContainsWord</a></li>
-         <li><a href="#attributeMultiple">attributeMultiple</a></li>
-         <li><a href="#attributeContains">attributeContains</a></li>
-         <li><a href="#attributeEndsWith">attributeEndsWith</a></li>
-         <li><a href="#attributeStartsWith">attributeStartsWith</a></li>
-         <li><a href="#attributeNotEqual">attributeNotEqual</a></li>
-         <li><a href="#attributeEquals">attributeEquals</a></li>
-         <li><a href="#attributeHas">attributeHas</a></li>
-         <li><a href="#visible">visible</a></li>
-         <li><a href="#hidden">hidden</a></li>
-         <li><a href="#parent">parent</a></li>
-         <li><a href="#has">has</a></li>
-         <li><a href="#empty">empty</a></li>
-         <li><a href="#contains">contains</a></li>
-         <li><a href="#animated">animated</a></li>
-         <li><a href="#header">header</a></li>
-         <li><a href="#lt">lt</a></li>
-         <li><a href="#gt">gt</a></li>
-         <li><a href="#eq">eq</a></li>
-         <li><a href="#odd">odd</a></li>
-         <li><a href="#even">even</a></li>
-         <li><a href="#not">not</a></li>
-         <li><a href="#last">last</a></li>
-         <li><a href="#first">first</a></li>
-         <li><a href="#next siblings">next siblings</a></li>
-         <li><a href="#next adjacent">next adjacent</a></li>
-         <li><a href="#child">child</a></li>
-         <li><a href="#descendant">descendant</a></li>
-         <li><a href="#multiple">multiple</a></li>
-         <li><a href="#all">all</a></li>
-         <li><a href="#class">class</a></li>
-         <li><a href="#element">element</a></li>
-         <li><a href="#id">id</a></li>
-         </ul><li><a href="#category traversing">Traversing</a></li><ul>
-         <li><a href="#has">has</a></li>
-         <li><a href="#parentsUntil">parentsUntil</a></li>
-         <li><a href="#prevUntil">prevUntil</a></li>
-         <li><a href="#nextUntil">nextUntil</a></li>
-         <li><a href="#each">each</a></li>
-         <li><a href="#first">first</a></li>
-         <li><a href="#last">last</a></li>
-         <li><a href="#slice">slice</a></li>
-         <li><a href="#end">end</a></li>
-         <li><a href="#andSelf">andSelf</a></li>
-         <li><a href="#siblings">siblings</a></li>
-         <li><a href="#prevAll">prevAll</a></li>
-         <li><a href="#prev">prev</a></li>
-         <li><a href="#parents">parents</a></li>
-         <li><a href="#parent">parent</a></li>
-         <li><a href="#offsetParent">offsetParent</a></li>
-         <li><a href="#nextAll">nextAll</a></li>
-         <li><a href="#next">next</a></li>
-         <li><a href="#find">find</a></li>
-         <li><a href="#contents">contents</a></li>
-         <li><a href="#closest">closest</a></li>
-         <li><a href="#closest">closest</a></li>
-         <li><a href="#children">children</a></li>
-         <li><a href="#add">add</a></li>
-         <li><a href="#not">not</a></li>
-         <li><a href="#map">map</a></li>
-         <li><a href="#is">is</a></li>
-         <li><a href="#eq">eq</a></li>
-         <li><a href="#filter">filter</a></li>
-         </ul><li><a href="#category attributes">Attributes</a></li><ul>
-         <li><a href="#removeProp">removeProp</a></li>
-         <li><a href="#prop">prop</a></li>
-         <li><a href="#prop">prop</a></li>
-         <li><a href="#val">val</a></li>
-         <li><a href="#val">val</a></li>
-         <li><a href="#html">html</a></li>
-         <li><a href="#html">html</a></li>
-         <li><a href="#toggleClass">toggleClass</a></li>
-         <li><a href="#removeClass">removeClass</a></li>
-         <li><a href="#hasClass">hasClass</a></li>
-         <li><a href="#removeAttr">removeAttr</a></li>
-         <li><a href="#attr">attr</a></li>
-         <li><a href="#attr">attr</a></li>
-         <li><a href="#addClass">addClass</a></li>
-         </ul><li><a href="#category css">CSS</a></li><ul>
-         <li><a href="#jQuery.cssHooks">jQuery.cssHooks</a></li>
-         <li><a href="#outerWidth">outerWidth</a></li>
-         <li><a href="#outerHeight">outerHeight</a></li>
-         <li><a href="#innerWidth">innerWidth</a></li>
-         <li><a href="#innerHeight">innerHeight</a></li>
-         <li><a href="#width">width</a></li>
-         <li><a href="#width">width</a></li>
-         <li><a href="#height">height</a></li>
-         <li><a href="#height">height</a></li>
-         <li><a href="#scrollLeft">scrollLeft</a></li>
-         <li><a href="#scrollLeft">scrollLeft</a></li>
-         <li><a href="#scrollTop">scrollTop</a></li>
-         <li><a href="#scrollTop">scrollTop</a></li>
-         <li><a href="#position">position</a></li>
-         <li><a href="#offset">offset</a></li>
-         <li><a href="#offset">offset</a></li>
-         <li><a href="#css">css</a></li>
-         <li><a href="#css">css</a></li>
-         <li>toggleClass: <a href="#toggleClass">See Attributes - toggleClass</a></li>
-         <li>removeClass: <a href="#removeClass">See Attributes - removeClass</a></li>
-         <li>hasClass: <a href="#hasClass">See Attributes - hasClass</a></li>
-         <li>addClass: <a href="#addClass">See Attributes - addClass</a></li>
-         </ul><li><a href="#category manipulation">Manipulation</a></li><ul>
-         <li>removeProp: <a href="#removeProp">See Attributes - removeProp</a></li>
-         <li>prop: <a href="#prop">See Attributes - prop</a></li>
-         <li>prop: <a href="#prop">See Attributes - prop</a></li>
-         <li>outerWidth: <a href="#outerWidth">See CSS - outerWidth</a></li>
-         <li>outerHeight: <a href="#outerHeight">See CSS - outerHeight</a></li>
-         <li>innerWidth: <a href="#innerWidth">See CSS - innerWidth</a></li>
-         <li>innerHeight: <a href="#innerHeight">See CSS - innerHeight</a></li>
-         <li>width: <a href="#width">See CSS - width</a></li>
-         <li>width: <a href="#width">See CSS - width</a></li>
-         <li>height: <a href="#height">See CSS - height</a></li>
-         <li>height: <a href="#height">See CSS - height</a></li>
-         <li>scrollLeft: <a href="#scrollLeft">See CSS - scrollLeft</a></li>
-         <li>scrollLeft: <a href="#scrollLeft">See CSS - scrollLeft</a></li>
-         <li>scrollTop: <a href="#scrollTop">See CSS - scrollTop</a></li>
-         <li>scrollTop: <a href="#scrollTop">See CSS - scrollTop</a></li>
-         <li>position: <a href="#position">See CSS - position</a></li>
-         <li>offset: <a href="#offset">See CSS - offset</a></li>
-         <li>offset: <a href="#offset">See CSS - offset</a></li>
-         <li>css: <a href="#css">See CSS - css</a></li>
-         <li>css: <a href="#css">See CSS - css</a></li>
-         <li><a href="#unwrap">unwrap</a></li>
-         <li><a href="#detach">detach</a></li>
-         <li><a href="#clone">clone</a></li>
-         <li><a href="#remove">remove</a></li>
-         <li><a href="#empty">empty</a></li>
-         <li><a href="#replaceAll">replaceAll</a></li>
-         <li><a href="#replaceWith">replaceWith</a></li>
-         <li><a href="#wrapInner">wrapInner</a></li>
-         <li><a href="#wrapAll">wrapAll</a></li>
-         <li><a href="#wrap">wrap</a></li>
-         <li><a href="#insertBefore">insertBefore</a></li>
-         <li><a href="#before">before</a></li>
-         <li><a href="#insertAfter">insertAfter</a></li>
-         <li><a href="#after">after</a></li>
-         <li><a href="#prependTo">prependTo</a></li>
-         <li><a href="#prepend">prepend</a></li>
-         <li><a href="#appendTo">appendTo</a></li>
-         <li><a href="#append">append</a></li>
-         <li>val: <a href="#val">See Attributes - val</a></li>
-         <li>val: <a href="#val">See Attributes - val</a></li>
-         <li><a href="#text">text</a></li>
-         <li><a href="#text">text</a></li>
-         <li>html: <a href="#html">See Attributes - html</a></li>
-         <li>html: <a href="#html">See Attributes - html</a></li>
-         <li>toggleClass: <a href="#toggleClass">See Attributes - toggleClass</a></li>
-         <li>removeClass: <a href="#removeClass">See Attributes - removeClass</a></li>
-         <li>hasClass: <a href="#hasClass">See Attributes - hasClass</a></li>
-         <li>removeAttr: <a href="#removeAttr">See Attributes - removeAttr</a></li>
-         <li>attr: <a href="#attr">See Attributes - attr</a></li>
-         <li>attr: <a href="#attr">See Attributes - attr</a></li>
-         <li>addClass: <a href="#addClass">See Attributes - addClass</a></li>
-         </ul><li><a href="#category data">Data</a></li><ul>
-         <li><a href="#jQuery.hasData">jQuery.hasData</a></li>
-         <li><a href="#jQuery.removeData">jQuery.removeData</a></li>
-         <li><a href="#jQuery.data">jQuery.data</a></li>
-         <li><a href="#jQuery.data">jQuery.data</a></li>
-         <li><a href="#jQuery.dequeue">jQuery.dequeue</a></li>
-         <li><a href="#jQuery.queue">jQuery.queue</a></li>
-         <li><a href="#jQuery.queue">jQuery.queue</a></li>
-         <li><a href="#clearQueue">clearQueue</a></li>
-         <li><a href="#removeData">removeData</a></li>
-         <li><a href="#data">data</a></li>
-         <li><a href="#data">data</a></li>
-         <li><a href="#dequeue">dequeue</a></li>
-         <li><a href="#queue">queue</a></li>
-         <li><a href="#queue">queue</a></li>
-         </ul><li><a href="#category forms">Forms</a></li><ul>
-         <li><a href="#submit">submit</a></li>
-         <li><a href="#select">select</a></li>
-         <li><a href="#change">change</a></li>
-         <li><a href="#blur">blur</a></li>
-         <li><a href="#focus">focus</a></li>
-         <li><a href="#serializeArray">serializeArray</a></li>
-         <li><a href="#serialize">serialize</a></li>
-         <li><a href="#jQuery.param">jQuery.param</a></li>
-         <li>val: <a href="#val">See Attributes - val</a></li>
-         <li>val: <a href="#val">See Attributes - val</a></li>
-         </ul><li><a href="#category events">Events</a></li><ul>
-         <li><a href="#toggle">toggle</a></li>
-         <li><a href="#event.namespace">event.namespace</a></li>
-         <li><a href="#undelegate">undelegate</a></li>
-         <li><a href="#delegate">delegate</a></li>
-         <li><a href="#jQuery.proxy">jQuery.proxy</a></li>
-         <li><a href="#focusout">focusout</a></li>
-         <li><a href="#focusin">focusin</a></li>
-         <li><a href="#event.isImmediatePropagationStopped">event.isImmediatePropagationStopped</a></li>
-         <li><a href="#event.stopImmediatePropagation">event.stopImmediatePropagation</a></li>
-         <li><a href="#event.isPropagationStopped">event.isPropagationStopped</a></li>
-         <li><a href="#event.stopPropagation">event.stopPropagation</a></li>
-         <li><a href="#event.isDefaultPrevented">event.isDefaultPrevented</a></li>
-         <li><a href="#event.preventDefault">event.preventDefault</a></li>
-         <li><a href="#event.timeStamp">event.timeStamp</a></li>
-         <li><a href="#event.result">event.result</a></li>
-         <li><a href="#event.which">event.which</a></li>
-         <li><a href="#event.pageY">event.pageY</a></li>
-         <li><a href="#event.pageX">event.pageX</a></li>
-         <li><a href="#event.currentTarget">event.currentTarget</a></li>
-         <li><a href="#event.relatedTarget">event.relatedTarget</a></li>
-         <li><a href="#event.data">event.data</a></li>
-         <li><a href="#event.target">event.target</a></li>
-         <li><a href="#event.type">event.type</a></li>
-         <li><a href="#keydown">keydown</a></li>
-         <li><a href="#scroll">scroll</a></li>
-         <li><a href="#resize">resize</a></li>
-         <li><a href="#keyup">keyup</a></li>
-         <li><a href="#keypress">keypress</a></li>
-         <li>submit: <a href="#submit">See Forms - submit</a></li>
-         <li>select: <a href="#select">See Forms - select</a></li>
-         <li>change: <a href="#change">See Forms - change</a></li>
-         <li>blur: <a href="#blur">See Forms - blur</a></li>
-         <li>focus: <a href="#focus">See Forms - focus</a></li>
-         <li><a href="#mousemove">mousemove</a></li>
-         <li><a href="#hover">hover</a></li>
-         <li><a href="#hover">hover</a></li>
-         <li><a href="#mouseleave">mouseleave</a></li>
-         <li><a href="#mouseenter">mouseenter</a></li>
-         <li><a href="#mouseout">mouseout</a></li>
-         <li><a href="#mouseover">mouseover</a></li>
-         <li><a href="#dblclick">dblclick</a></li>
-         <li><a href="#click">click</a></li>
-         <li><a href="#mouseup">mouseup</a></li>
-         <li><a href="#mousedown">mousedown</a></li>
-         <li><a href="#error">error</a></li>
-         <li><a href="#unload">unload</a></li>
-         <li><a href="#load">load</a></li>
-         <li><a href="#ready">ready</a></li>
-         <li><a href="#die">die</a></li>
-         <li><a href="#die">die</a></li>
-         <li><a href="#live">live</a></li>
-         <li><a href="#triggerHandler">triggerHandler</a></li>
-         <li><a href="#trigger">trigger</a></li>
-         <li><a href="#one">one</a></li>
-         <li><a href="#unbind">unbind</a></li>
-         <li><a href="#bind">bind</a></li>
-         </ul><li><a href="#category deferred-object">Deferred Object</a></li><ul>
-         <li><a href="#deferred.pipe">deferred.pipe</a></li>
-         <li><a href="#deferred.always">deferred.always</a></li>
-         <li><a href="#promise">promise</a></li>
-         <li><a href="#deferred.promise">deferred.promise</a></li>
-         <li>jQuery.when: <a href="#jQuery.when">See Core - jQuery.when</a></li>
-         <li><a href="#deferred.resolveWith">deferred.resolveWith</a></li>
-         <li><a href="#deferred.rejectWith">deferred.rejectWith</a></li>
-         <li><a href="#deferred.fail">deferred.fail</a></li>
-         <li><a href="#deferred.done">deferred.done</a></li>
-         <li><a href="#deferred.then">deferred.then</a></li>
-         <li><a href="#deferred.reject">deferred.reject</a></li>
-         <li><a href="#deferred.isRejected">deferred.isRejected</a></li>
-         <li><a href="#deferred.isResolved">deferred.isResolved</a></li>
-         <li><a href="#deferred.resolve">deferred.resolve</a></li>
-         </ul><li><a href="#category effects">Effects</a></li><ul>
-         <li><a href="#fadeToggle">fadeToggle</a></li>
-         <li><a href="#jQuery.fx.interval">jQuery.fx.interval</a></li>
-         <li><a href="#delay">delay</a></li>
-         <li><a href="#jQuery.fx.off">jQuery.fx.off</a></li>
-         <li>clearQueue: <a href="#clearQueue">See Data - clearQueue</a></li>
-         <li>dequeue: <a href="#dequeue">See Data - dequeue</a></li>
-         <li>queue: <a href="#queue">See Data - queue</a></li>
-         <li>queue: <a href="#queue">See Data - queue</a></li>
-         <li><a href="#stop">stop</a></li>
-         <li><a href="#animate">animate</a></li>
-         <li><a href="#fadeTo">fadeTo</a></li>
-         <li><a href="#fadeOut">fadeOut</a></li>
-         <li><a href="#fadeIn">fadeIn</a></li>
-         <li><a href="#slideToggle">slideToggle</a></li>
-         <li><a href="#slideUp">slideUp</a></li>
-         <li><a href="#slideDown">slideDown</a></li>
-         <li><a href="#toggle">toggle</a></li>
-         <li><a href="#hide">hide</a></li>
-         <li><a href="#show">show</a></li>
-         </ul><li><a href="#category ajax">Ajax</a></li><ul>
-         <li><a href="#jQuery.ajaxPrefilter">jQuery.ajaxPrefilter</a></li>
-         <li><a href="#ajaxComplete">ajaxComplete</a></li>
-         <li>serializeArray: <a href="#serializeArray">See Forms - serializeArray</a></li>
-         <li>serialize: <a href="#serialize">See Forms - serialize</a></li>
-         <li><a href="#jQuery.ajaxSetup">jQuery.ajaxSetup</a></li>
-         <li><a href="#ajaxSuccess">ajaxSuccess</a></li>
-         <li><a href="#ajaxStop">ajaxStop</a></li>
-         <li><a href="#ajaxStart">ajaxStart</a></li>
-         <li><a href="#ajaxSend">ajaxSend</a></li>
-         <li><a href="#ajaxError">ajaxError</a></li>
-         <li><a href="#jQuery.post">jQuery.post</a></li>
-         <li><a href="#jQuery.getScript">jQuery.getScript</a></li>
-         <li><a href="#jQuery.getJSON">jQuery.getJSON</a></li>
-         <li><a href="#jQuery.get">jQuery.get</a></li>
-         <li><a href="#load">load</a></li>
-         <li><a href="#jQuery.ajax">jQuery.ajax</a></li>
-         <li>jQuery.param: <a href="#jQuery.param">See Forms - jQuery.param</a></li>
-         </ul><li><a href="#category miscellaneous">Miscellaneous</a></li><ul>
-         <li>each: <a href="#each">See Traversing - each</a></li>
-         <li><a href="#toArray">toArray</a></li>
-         <li><a href="#index">index</a></li>
-         <li>removeData: <a href="#removeData">See Data - removeData</a></li>
-         <li>data: <a href="#data">See Data - data</a></li>
-         <li>data: <a href="#data">See Data - data</a></li>
-         <li><a href="#get">get</a></li>
-         <li><a href="#size">size</a></li>
-         <li>jQuery.noConflict: <a href="#jQuery.noConflict">See Core - jQuery.noConflict</a></li>
-         <li>jQuery.param: <a href="#jQuery.param">See Forms - jQuery.param</a></li>
-         </ul><li><a href="#category dimensions">Dimensions</a></li><ul>
-         <li>outerWidth: <a href="#outerWidth">See CSS - outerWidth</a></li>
-         <li>outerHeight: <a href="#outerHeight">See CSS - outerHeight</a></li>
-         <li>innerWidth: <a href="#innerWidth">See CSS - innerWidth</a></li>
-         <li>innerHeight: <a href="#innerHeight">See CSS - innerHeight</a></li>
-         <li>width: <a href="#width">See CSS - width</a></li>
-         <li>width: <a href="#width">See CSS - width</a></li>
-         <li>height: <a href="#height">See CSS - height</a></li>
-         <li>height: <a href="#height">See CSS - height</a></li>
-         </ul><li><a href="#category offset">Offset</a></li><ul>
-         <li>offsetParent: <a href="#offsetParent">See Traversing - offsetParent</a></li>
-         <li>scrollLeft: <a href="#scrollLeft">See CSS - scrollLeft</a></li>
-         <li>scrollLeft: <a href="#scrollLeft">See CSS - scrollLeft</a></li>
-         <li>scrollTop: <a href="#scrollTop">See CSS - scrollTop</a></li>
-         <li>scrollTop: <a href="#scrollTop">See CSS - scrollTop</a></li>
-         <li>position: <a href="#position">See CSS - position</a></li>
-         <li>offset: <a href="#offset">See CSS - offset</a></li>
-         <li>offset: <a href="#offset">See CSS - offset</a></li>
-         </ul><li><a href="#category utilities">Utilities</a></li><ul>
-         <li><a href="#jQuery.now">jQuery.now</a></li>
-         <li><a href="#jQuery.parseXML">jQuery.parseXML</a></li>
-         <li><a href="#jQuery.type">jQuery.type</a></li>
-         <li><a href="#jQuery.isWindow">jQuery.isWindow</a></li>
-         <li><a href="#jQuery.parseJSON">jQuery.parseJSON</a></li>
-         <li>jQuery.proxy: <a href="#jQuery.proxy">See Events - jQuery.proxy</a></li>
-         <li><a href="#jQuery.contains">jQuery.contains</a></li>
-         <li><a href="#jQuery.noop">jQuery.noop</a></li>
-         <li><a href="#jQuery.globalEval">jQuery.globalEval</a></li>
-         <li><a href="#jQuery.isXMLDoc">jQuery.isXMLDoc</a></li>
-         <li>jQuery.removeData: <a href="#jQuery.removeData">See Data - jQuery.removeData</a></li>
-         <li>jQuery.data: <a href="#jQuery.data">See Data - jQuery.data</a></li>
-         <li>jQuery.data: <a href="#jQuery.data">See Data - jQuery.data</a></li>
-         <li>jQuery.dequeue: <a href="#jQuery.dequeue">See Data - jQuery.dequeue</a></li>
-         <li>jQuery.queue: <a href="#jQuery.queue">See Data - jQuery.queue</a></li>
-         <li>jQuery.queue: <a href="#jQuery.queue">See Data - jQuery.queue</a></li>
-         <li>clearQueue: <a href="#clearQueue">See Data - clearQueue</a></li>
-         <li><a href="#jQuery.isEmptyObject">jQuery.isEmptyObject</a></li>
-         <li><a href="#jQuery.isPlainObject">jQuery.isPlainObject</a></li>
-         <li>dequeue: <a href="#dequeue">See Data - dequeue</a></li>
-         <li>queue: <a href="#queue">See Data - queue</a></li>
-         <li>queue: <a href="#queue">See Data - queue</a></li>
-         <li><a href="#jQuery.browser">jQuery.browser</a></li>
-         <li><a href="#jQuery.browser.version">jQuery.browser.version</a></li>
-         <li><a href="#jQuery.trim">jQuery.trim</a></li>
-         <li><a href="#jQuery.isFunction">jQuery.isFunction</a></li>
-         <li><a href="#jQuery.isArray">jQuery.isArray</a></li>
-         <li><a href="#jQuery.unique">jQuery.unique</a></li>
-         <li><a href="#jQuery.merge">jQuery.merge</a></li>
-         <li><a href="#jQuery.inArray">jQuery.inArray</a></li>
-         <li><a href="#jQuery.map">jQuery.map</a></li>
-         <li><a href="#jQuery.makeArray">jQuery.makeArray</a></li>
-         <li><a href="#jQuery.grep">jQuery.grep</a></li>
-         <li><a href="#jQuery.extend">jQuery.extend</a></li>
-         <li><a href="#jQuery.each">jQuery.each</a></li>
-         <li><a href="#jQuery.boxModel">jQuery.boxModel</a></li>
-         <li><a href="#jQuery.support">jQuery.support</a></li>
-         </ul><li><a href="#category plugin-authoring">Plugin Authoring</a></li><ul>
-      </ul></ul>
-   </div>
-   <h2><a name="category core">Core</h2
-      ><h3><a name="jQuery.holdReady">jQuery.holdReady</a></h3>
-      <p class=summary>Holds or releases the execution of jQuery's ready event.<div class=signature><div class='added'>Added in version <span class='version'>1.6</span></div>
-      <div class=call>jQuery.holdReady(hold):undefined</div><table class=arguments><tr class=argument><td class=argdef><span class="name">hold</span>:<span class=type>Boolean</span></td><td> <span class=description>Indicates whether the ready hold is being requested or released</span></td></tr></table></div>
-      <div class=detail>
-         <p >The <span class=code>$.holdReady()</span> method allows the caller to delay jQuery's ready event. This advanced feature would typically be used by dynamic script loaders that want to load additional JavaScript such as jQuery plugins before allowing the ready event to occur, even though the DOM may be ready. This method must be called early in the document, such as in the <span class=code>&lt;head&gt;</span> immediately after the jQuery script tag. Calling this method after the ready event has already fired will have no effect. </p>
-         <p >To delay the ready event, first call <span class=code>$.holdReady(true)</span>. When the ready event should be released to execute, call <span class=code>$.holdReady(false)</span>. Note that multiple holds can be put on the ready event, one for each <span class=code>$.holdReady(true)</span> call. The ready event will not actually fire until all holds have been released with a corresponding <span class=code>$.holdReady(false)</span> <em >and</em> the normal document ready conditions are met. (See <a href="http://api.jquery.com/ready/"><span class=code>ready</span></a> for more information.)</p>
+            +</span></label><input name="toc" type="checkbox" id="TOC">
+            <ul><li><a href="#category core">Core</a></li><ul>
+            <li><a href="#jQuery.holdReady">jQuery.holdReady</a></li>
+            <li><a href="#jQuery.when">jQuery.when</a></li>
+            <li><a href="#jQuery.sub">jQuery.sub</a></li>
+            <li><a href="#jQuery.noConflict">jQuery.noConflict</a></li>
+            <li><a href="#jQuery">jQuery</a></li>
+            <li><a href="#jQuery">jQuery</a></li>
+            <li><a href="#jQuery">jQuery</a></li>
+            </ul><li><a href="#category selectors">Selectors</a></li><ul>
+            <li><a href="#focus">focus</a></li>
+            <li><a href="#selected">selected</a></li>
+            <li><a href="#checked">checked</a></li>
+            <li><a href="#disabled">disabled</a></li>
+            <li><a href="#enabled">enabled</a></li>
+            <li><a href="#file">file</a></li>
+            <li><a href="#button">button</a></li>
+            <li><a href="#reset">reset</a></li>
+            <li><a href="#image">image</a></li>
+            <li><a href="#submit">submit</a></li>
+            <li><a href="#checkbox">checkbox</a></li>
+            <li><a href="#radio">radio</a></li>
+            <li><a href="#password">password</a></li>
+            <li><a href="#text">text</a></li>
+            <li><a href="#input">input</a></li>
+            <li><a href="#only-child">only-child</a></li>
+            <li><a href="#last-child">last-child</a></li>
+            <li><a href="#first-child">first-child</a></li>
+            <li><a href="#nth-child">nth-child</a></li>
+            <li><a href="#attributeContainsPrefix">attributeContainsPrefix</a></li>
+            <li><a href="#attributeContainsWord">attributeContainsWord</a></li>
+            <li><a href="#attributeMultiple">attributeMultiple</a></li>
+            <li><a href="#attributeContains">attributeContains</a></li>
+            <li><a href="#attributeEndsWith">attributeEndsWith</a></li>
+            <li><a href="#attributeStartsWith">attributeStartsWith</a></li>
+            <li><a href="#attributeNotEqual">attributeNotEqual</a></li>
+            <li><a href="#attributeEquals">attributeEquals</a></li>
+            <li><a href="#attributeHas">attributeHas</a></li>
+            <li><a href="#visible">visible</a></li>
+            <li><a href="#hidden">hidden</a></li>
+            <li><a href="#parent">parent</a></li>
+            <li><a href="#has">has</a></li>
+            <li><a href="#empty">empty</a></li>
+            <li><a href="#contains">contains</a></li>
+            <li><a href="#animated">animated</a></li>
+            <li><a href="#header">header</a></li>
+            <li><a href="#lt">lt</a></li>
+            <li><a href="#gt">gt</a></li>
+            <li><a href="#eq">eq</a></li>
+            <li><a href="#odd">odd</a></li>
+            <li><a href="#even">even</a></li>
+            <li><a href="#not">not</a></li>
+            <li><a href="#last">last</a></li>
+            <li><a href="#first">first</a></li>
+            <li><a href="#next siblings">next siblings</a></li>
+            <li><a href="#next adjacent">next adjacent</a></li>
+            <li><a href="#child">child</a></li>
+            <li><a href="#descendant">descendant</a></li>
+            <li><a href="#multiple">multiple</a></li>
+            <li><a href="#all">all</a></li>
+            <li><a href="#class">class</a></li>
+            <li><a href="#element">element</a></li>
+            <li><a href="#id">id</a></li>
+            </ul><li><a href="#category traversing">Traversing</a></li><ul>
+            <li><a href="#has">has</a></li>
+            <li><a href="#parentsUntil">parentsUntil</a></li>
+            <li><a href="#prevUntil">prevUntil</a></li>
+            <li><a href="#nextUntil">nextUntil</a></li>
+            <li><a href="#each">each</a></li>
+            <li><a href="#first">first</a></li>
+            <li><a href="#last">last</a></li>
+            <li><a href="#slice">slice</a></li>
+            <li><a href="#end">end</a></li>
+            <li><a href="#andSelf">andSelf</a></li>
+            <li><a href="#siblings">siblings</a></li>
+            <li><a href="#prevAll">prevAll</a></li>
+            <li><a href="#prev">prev</a></li>
+            <li><a href="#parents">parents</a></li>
+            <li><a href="#parent">parent</a></li>
+            <li><a href="#offsetParent">offsetParent</a></li>
+            <li><a href="#nextAll">nextAll</a></li>
+            <li><a href="#next">next</a></li>
+            <li><a href="#find">find</a></li>
+            <li><a href="#contents">contents</a></li>
+            <li><a href="#closest">closest</a></li>
+            <li><a href="#closest">closest</a></li>
+            <li><a href="#children">children</a></li>
+            <li><a href="#add">add</a></li>
+            <li><a href="#not">not</a></li>
+            <li><a href="#map">map</a></li>
+            <li><a href="#is">is</a></li>
+            <li><a href="#eq">eq</a></li>
+            <li><a href="#filter">filter</a></li>
+            </ul><li><a href="#category attributes">Attributes</a></li><ul>
+            <li><a href="#removeProp">removeProp</a></li>
+            <li><a href="#prop">prop</a></li>
+            <li><a href="#prop">prop</a></li>
+            <li><a href="#val">val</a></li>
+            <li><a href="#val">val</a></li>
+            <li><a href="#html">html</a></li>
+            <li><a href="#html">html</a></li>
+            <li><a href="#toggleClass">toggleClass</a></li>
+            <li><a href="#removeClass">removeClass</a></li>
+            <li><a href="#hasClass">hasClass</a></li>
+            <li><a href="#removeAttr">removeAttr</a></li>
+            <li><a href="#attr">attr</a></li>
+            <li><a href="#attr">attr</a></li>
+            <li><a href="#addClass">addClass</a></li>
+            </ul><li><a href="#category css">CSS</a></li><ul>
+            <li><a href="#jQuery.cssHooks">jQuery.cssHooks</a></li>
+            <li><a href="#outerWidth">outerWidth</a></li>
+            <li><a href="#outerHeight">outerHeight</a></li>
+            <li><a href="#innerWidth">innerWidth</a></li>
+            <li><a href="#innerHeight">innerHeight</a></li>
+            <li><a href="#width">width</a></li>
+            <li><a href="#width">width</a></li>
+            <li><a href="#height">height</a></li>
+            <li><a href="#height">height</a></li>
+            <li><a href="#scrollLeft">scrollLeft</a></li>
+            <li><a href="#scrollLeft">scrollLeft</a></li>
+            <li><a href="#scrollTop">scrollTop</a></li>
+            <li><a href="#scrollTop">scrollTop</a></li>
+            <li><a href="#position">position</a></li>
+            <li><a href="#offset">offset</a></li>
+            <li><a href="#offset">offset</a></li>
+            <li><a href="#css">css</a></li>
+            <li><a href="#css">css</a></li>
+            <li>toggleClass: <a href="#toggleClass">See Attributes - toggleClass</a></li>
+            <li>removeClass: <a href="#removeClass">See Attributes - removeClass</a></li>
+            <li>hasClass: <a href="#hasClass">See Attributes - hasClass</a></li>
+            <li>addClass: <a href="#addClass">See Attributes - addClass</a></li>
+            </ul><li><a href="#category manipulation">Manipulation</a></li><ul>
+            <li>removeProp: <a href="#removeProp">See Attributes - removeProp</a></li>
+            <li>prop: <a href="#prop">See Attributes - prop</a></li>
+            <li>prop: <a href="#prop">See Attributes - prop</a></li>
+            <li>outerWidth: <a href="#outerWidth">See CSS - outerWidth</a></li>
+            <li>outerHeight: <a href="#outerHeight">See CSS - outerHeight</a></li>
+            <li>innerWidth: <a href="#innerWidth">See CSS - innerWidth</a></li>
+            <li>innerHeight: <a href="#innerHeight">See CSS - innerHeight</a></li>
+            <li>width: <a href="#width">See CSS - width</a></li>
+            <li>width: <a href="#width">See CSS - width</a></li>
+            <li>height: <a href="#height">See CSS - height</a></li>
+            <li>height: <a href="#height">See CSS - height</a></li>
+            <li>scrollLeft: <a href="#scrollLeft">See CSS - scrollLeft</a></li>
+            <li>scrollLeft: <a href="#scrollLeft">See CSS - scrollLeft</a></li>
+            <li>scrollTop: <a href="#scrollTop">See CSS - scrollTop</a></li>
+            <li>scrollTop: <a href="#scrollTop">See CSS - scrollTop</a></li>
+            <li>position: <a href="#position">See CSS - position</a></li>
+            <li>offset: <a href="#offset">See CSS - offset</a></li>
+            <li>offset: <a href="#offset">See CSS - offset</a></li>
+            <li>css: <a href="#css">See CSS - css</a></li>
+            <li>css: <a href="#css">See CSS - css</a></li>
+            <li><a href="#unwrap">unwrap</a></li>
+            <li><a href="#detach">detach</a></li>
+            <li><a href="#clone">clone</a></li>
+            <li><a href="#remove">remove</a></li>
+            <li><a href="#empty">empty</a></li>
+            <li><a href="#replaceAll">replaceAll</a></li>
+            <li><a href="#replaceWith">replaceWith</a></li>
+            <li><a href="#wrapInner">wrapInner</a></li>
+            <li><a href="#wrapAll">wrapAll</a></li>
+            <li><a href="#wrap">wrap</a></li>
+            <li><a href="#insertBefore">insertBefore</a></li>
+            <li><a href="#before">before</a></li>
+            <li><a href="#insertAfter">insertAfter</a></li>
+            <li><a href="#after">after</a></li>
+            <li><a href="#prependTo">prependTo</a></li>
+            <li><a href="#prepend">prepend</a></li>
+            <li><a href="#appendTo">appendTo</a></li>
+            <li><a href="#append">append</a></li>
+            <li>val: <a href="#val">See Attributes - val</a></li>
+            <li>val: <a href="#val">See Attributes - val</a></li>
+            <li><a href="#text">text</a></li>
+            <li><a href="#text">text</a></li>
+            <li>html: <a href="#html">See Attributes - html</a></li>
+            <li>html: <a href="#html">See Attributes - html</a></li>
+            <li>toggleClass: <a href="#toggleClass">See Attributes - toggleClass</a></li>
+            <li>removeClass: <a href="#removeClass">See Attributes - removeClass</a></li>
+            <li>hasClass: <a href="#hasClass">See Attributes - hasClass</a></li>
+            <li>removeAttr: <a href="#removeAttr">See Attributes - removeAttr</a></li>
+            <li>attr: <a href="#attr">See Attributes - attr</a></li>
+            <li>attr: <a href="#attr">See Attributes - attr</a></li>
+            <li>addClass: <a href="#addClass">See Attributes - addClass</a></li>
+            </ul><li><a href="#category data">Data</a></li><ul>
+            <li><a href="#jQuery.hasData">jQuery.hasData</a></li>
+            <li><a href="#jQuery.removeData">jQuery.removeData</a></li>
+            <li><a href="#jQuery.data">jQuery.data</a></li>
+            <li><a href="#jQuery.data">jQuery.data</a></li>
+            <li><a href="#jQuery.dequeue">jQuery.dequeue</a></li>
+            <li><a href="#jQuery.queue">jQuery.queue</a></li>
+            <li><a href="#jQuery.queue">jQuery.queue</a></li>
+            <li><a href="#clearQueue">clearQueue</a></li>
+            <li><a href="#removeData">removeData</a></li>
+            <li><a href="#data">data</a></li>
+            <li><a href="#data">data</a></li>
+            <li><a href="#dequeue">dequeue</a></li>
+            <li><a href="#queue">queue</a></li>
+            <li><a href="#queue">queue</a></li>
+            </ul><li><a href="#category forms">Forms</a></li><ul>
+            <li><a href="#submit">submit</a></li>
+            <li><a href="#select">select</a></li>
+            <li><a href="#change">change</a></li>
+            <li><a href="#blur">blur</a></li>
+            <li><a href="#focus">focus</a></li>
+            <li><a href="#serializeArray">serializeArray</a></li>
+            <li><a href="#serialize">serialize</a></li>
+            <li><a href="#jQuery.param">jQuery.param</a></li>
+            <li>val: <a href="#val">See Attributes - val</a></li>
+            <li>val: <a href="#val">See Attributes - val</a></li>
+            </ul><li><a href="#category events">Events</a></li><ul>
+            <li><a href="#toggle">toggle</a></li>
+            <li><a href="#event.namespace">event.namespace</a></li>
+            <li><a href="#undelegate">undelegate</a></li>
+            <li><a href="#delegate">delegate</a></li>
+            <li><a href="#jQuery.proxy">jQuery.proxy</a></li>
+            <li><a href="#focusout">focusout</a></li>
+            <li><a href="#focusin">focusin</a></li>
+            <li><a href="#event.isImmediatePropagationStopped">event.isImmediatePropagationStopped</a></li>
+            <li><a href="#event.stopImmediatePropagation">event.stopImmediatePropagation</a></li>
+            <li><a href="#event.isPropagationStopped">event.isPropagationStopped</a></li>
+            <li><a href="#event.stopPropagation">event.stopPropagation</a></li>
+            <li><a href="#event.isDefaultPrevented">event.isDefaultPrevented</a></li>
+            <li><a href="#event.preventDefault">event.preventDefault</a></li>
+            <li><a href="#event.timeStamp">event.timeStamp</a></li>
+            <li><a href="#event.result">event.result</a></li>
+            <li><a href="#event.which">event.which</a></li>
+            <li><a href="#event.pageY">event.pageY</a></li>
+            <li><a href="#event.pageX">event.pageX</a></li>
+            <li><a href="#event.currentTarget">event.currentTarget</a></li>
+            <li><a href="#event.relatedTarget">event.relatedTarget</a></li>
+            <li><a href="#event.data">event.data</a></li>
+            <li><a href="#event.target">event.target</a></li>
+            <li><a href="#event.type">event.type</a></li>
+            <li><a href="#keydown">keydown</a></li>
+            <li><a href="#scroll">scroll</a></li>
+            <li><a href="#resize">resize</a></li>
+            <li><a href="#keyup">keyup</a></li>
+            <li><a href="#keypress">keypress</a></li>
+            <li>submit: <a href="#submit">See Forms - submit</a></li>
+            <li>select: <a href="#select">See Forms - select</a></li>
+            <li>change: <a href="#change">See Forms - change</a></li>
+            <li>blur: <a href="#blur">See Forms - blur</a></li>
+            <li>focus: <a href="#focus">See Forms - focus</a></li>
+            <li><a href="#mousemove">mousemove</a></li>
+            <li><a href="#hover">hover</a></li>
+            <li><a href="#hover">hover</a></li>
+            <li><a href="#mouseleave">mouseleave</a></li>
+            <li><a href="#mouseenter">mouseenter</a></li>
+            <li><a href="#mouseout">mouseout</a></li>
+            <li><a href="#mouseover">mouseover</a></li>
+            <li><a href="#dblclick">dblclick</a></li>
+            <li><a href="#click">click</a></li>
+            <li><a href="#mouseup">mouseup</a></li>
+            <li><a href="#mousedown">mousedown</a></li>
+            <li><a href="#error">error</a></li>
+            <li><a href="#unload">unload</a></li>
+            <li><a href="#load">load</a></li>
+            <li><a href="#ready">ready</a></li>
+            <li><a href="#die">die</a></li>
+            <li><a href="#die">die</a></li>
+            <li><a href="#live">live</a></li>
+            <li><a href="#triggerHandler">triggerHandler</a></li>
+            <li><a href="#trigger">trigger</a></li>
+            <li><a href="#one">one</a></li>
+            <li><a href="#unbind">unbind</a></li>
+            <li><a href="#bind">bind</a></li>
+            </ul><li><a href="#category deferred-object">Deferred Object</a></li><ul>
+            <li><a href="#deferred.pipe">deferred.pipe</a></li>
+            <li><a href="#deferred.always">deferred.always</a></li>
+            <li><a href="#promise">promise</a></li>
+            <li><a href="#deferred.promise">deferred.promise</a></li>
+            <li>jQuery.when: <a href="#jQuery.when">See Core - jQuery.when</a></li>
+            <li><a href="#deferred.resolveWith">deferred.resolveWith</a></li>
+            <li><a href="#deferred.rejectWith">deferred.rejectWith</a></li>
+            <li><a href="#deferred.fail">deferred.fail</a></li>
+            <li><a href="#deferred.done">deferred.done</a></li>
+            <li><a href="#deferred.then">deferred.then</a></li>
+            <li><a href="#deferred.reject">deferred.reject</a></li>
+            <li><a href="#deferred.isRejected">deferred.isRejected</a></li>
+            <li><a href="#deferred.isResolved">deferred.isResolved</a></li>
+            <li><a href="#deferred.resolve">deferred.resolve</a></li>
+            </ul><li><a href="#category effects">Effects</a></li><ul>
+            <li><a href="#fadeToggle">fadeToggle</a></li>
+            <li><a href="#jQuery.fx.interval">jQuery.fx.interval</a></li>
+            <li><a href="#delay">delay</a></li>
+            <li><a href="#jQuery.fx.off">jQuery.fx.off</a></li>
+            <li>clearQueue: <a href="#clearQueue">See Data - clearQueue</a></li>
+            <li>dequeue: <a href="#dequeue">See Data - dequeue</a></li>
+            <li>queue: <a href="#queue">See Data - queue</a></li>
+            <li>queue: <a href="#queue">See Data - queue</a></li>
+            <li><a href="#stop">stop</a></li>
+            <li><a href="#animate">animate</a></li>
+            <li><a href="#fadeTo">fadeTo</a></li>
+            <li><a href="#fadeOut">fadeOut</a></li>
+            <li><a href="#fadeIn">fadeIn</a></li>
+            <li><a href="#slideToggle">slideToggle</a></li>
+            <li><a href="#slideUp">slideUp</a></li>
+            <li><a href="#slideDown">slideDown</a></li>
+            <li><a href="#toggle">toggle</a></li>
+            <li><a href="#hide">hide</a></li>
+            <li><a href="#show">show</a></li>
+            </ul><li><a href="#category ajax">Ajax</a></li><ul>
+            <li><a href="#jQuery.ajaxPrefilter">jQuery.ajaxPrefilter</a></li>
+            <li><a href="#ajaxComplete">ajaxComplete</a></li>
+            <li>serializeArray: <a href="#serializeArray">See Forms - serializeArray</a></li>
+            <li>serialize: <a href="#serialize">See Forms - serialize</a></li>
+            <li><a href="#jQuery.ajaxSetup">jQuery.ajaxSetup</a></li>
+            <li><a href="#ajaxSuccess">ajaxSuccess</a></li>
+            <li><a href="#ajaxStop">ajaxStop</a></li>
+            <li><a href="#ajaxStart">ajaxStart</a></li>
+            <li><a href="#ajaxSend">ajaxSend</a></li>
+            <li><a href="#ajaxError">ajaxError</a></li>
+            <li><a href="#jQuery.post">jQuery.post</a></li>
+            <li><a href="#jQuery.getScript">jQuery.getScript</a></li>
+            <li><a href="#jQuery.getJSON">jQuery.getJSON</a></li>
+            <li><a href="#jQuery.get">jQuery.get</a></li>
+            <li><a href="#load">load</a></li>
+            <li><a href="#jQuery.ajax">jQuery.ajax</a></li>
+            <li>jQuery.param: <a href="#jQuery.param">See Forms - jQuery.param</a></li>
+            </ul><li><a href="#category miscellaneous">Miscellaneous</a></li><ul>
+            <li>each: <a href="#each">See Traversing - each</a></li>
+            <li><a href="#toArray">toArray</a></li>
+            <li><a href="#index">index</a></li>
+            <li>removeData: <a href="#removeData">See Data - removeData</a></li>
+            <li>data: <a href="#data">See Data - data</a></li>
+            <li>data: <a href="#data">See Data - data</a></li>
+            <li><a href="#get">get</a></li>
+            <li><a href="#size">size</a></li>
+            <li>jQuery.noConflict: <a href="#jQuery.noConflict">See Core - jQuery.noConflict</a></li>
+            <li>jQuery.param: <a href="#jQuery.param">See Forms - jQuery.param</a></li>
+            </ul><li><a href="#category dimensions">Dimensions</a></li><ul>
+            <li>outerWidth: <a href="#outerWidth">See CSS - outerWidth</a></li>
+            <li>outerHeight: <a href="#outerHeight">See CSS - outerHeight</a></li>
+            <li>innerWidth: <a href="#innerWidth">See CSS - innerWidth</a></li>
+            <li>innerHeight: <a href="#innerHeight">See CSS - innerHeight</a></li>
+            <li>width: <a href="#width">See CSS - width</a></li>
+            <li>width: <a href="#width">See CSS - width</a></li>
+            <li>height: <a href="#height">See CSS - height</a></li>
+            <li>height: <a href="#height">See CSS - height</a></li>
+            </ul><li><a href="#category offset">Offset</a></li><ul>
+            <li>offsetParent: <a href="#offsetParent">See Traversing - offsetParent</a></li>
+            <li>scrollLeft: <a href="#scrollLeft">See CSS - scrollLeft</a></li>
+            <li>scrollLeft: <a href="#scrollLeft">See CSS - scrollLeft</a></li>
+            <li>scrollTop: <a href="#scrollTop">See CSS - scrollTop</a></li>
+            <li>scrollTop: <a href="#scrollTop">See CSS - scrollTop</a></li>
+            <li>position: <a href="#position">See CSS - position</a></li>
+            <li>offset: <a href="#offset">See CSS - offset</a></li>
+            <li>offset: <a href="#offset">See CSS - offset</a></li>
+            </ul><li><a href="#category utilities">Utilities</a></li><ul>
+            <li><a href="#jQuery.now">jQuery.now</a></li>
+            <li><a href="#jQuery.parseXML">jQuery.parseXML</a></li>
+            <li><a href="#jQuery.type">jQuery.type</a></li>
+            <li><a href="#jQuery.isWindow">jQuery.isWindow</a></li>
+            <li><a href="#jQuery.parseJSON">jQuery.parseJSON</a></li>
+            <li>jQuery.proxy: <a href="#jQuery.proxy">See Events - jQuery.proxy</a></li>
+            <li><a href="#jQuery.contains">jQuery.contains</a></li>
+            <li><a href="#jQuery.noop">jQuery.noop</a></li>
+            <li><a href="#jQuery.globalEval">jQuery.globalEval</a></li>
+            <li><a href="#jQuery.isXMLDoc">jQuery.isXMLDoc</a></li>
+            <li>jQuery.removeData: <a href="#jQuery.removeData">See Data - jQuery.removeData</a></li>
+            <li>jQuery.data: <a href="#jQuery.data">See Data - jQuery.data</a></li>
+            <li>jQuery.data: <a href="#jQuery.data">See Data - jQuery.data</a></li>
+            <li>jQuery.dequeue: <a href="#jQuery.dequeue">See Data - jQuery.dequeue</a></li>
+            <li>jQuery.queue: <a href="#jQuery.queue">See Data - jQuery.queue</a></li>
+            <li>jQuery.queue: <a href="#jQuery.queue">See Data - jQuery.queue</a></li>
+            <li>clearQueue: <a href="#clearQueue">See Data - clearQueue</a></li>
+            <li><a href="#jQuery.isEmptyObject">jQuery.isEmptyObject</a></li>
+            <li><a href="#jQuery.isPlainObject">jQuery.isPlainObject</a></li>
+            <li>dequeue: <a href="#dequeue">See Data - dequeue</a></li>
+            <li>queue: <a href="#queue">See Data - queue</a></li>
+            <li>queue: <a href="#queue">See Data - queue</a></li>
+            <li><a href="#jQuery.browser">jQuery.browser</a></li>
+            <li><a href="#jQuery.browser.version">jQuery.browser.version</a></li>
+            <li><a href="#jQuery.trim">jQuery.trim</a></li>
+            <li><a href="#jQuery.isFunction">jQuery.isFunction</a></li>
+            <li><a href="#jQuery.isArray">jQuery.isArray</a></li>
+            <li><a href="#jQuery.unique">jQuery.unique</a></li>
+            <li><a href="#jQuery.merge">jQuery.merge</a></li>
+            <li><a href="#jQuery.inArray">jQuery.inArray</a></li>
+            <li><a href="#jQuery.map">jQuery.map</a></li>
+            <li><a href="#jQuery.makeArray">jQuery.makeArray</a></li>
+            <li><a href="#jQuery.grep">jQuery.grep</a></li>
+            <li><a href="#jQuery.extend">jQuery.extend</a></li>
+            <li><a href="#jQuery.each">jQuery.each</a></li>
+            <li><a href="#jQuery.boxModel">jQuery.boxModel</a></li>
+            <li><a href="#jQuery.support">jQuery.support</a></li>
+            </ul><li><a href="#category plugin-authoring">Plugin Authoring</a></li><ul>
+         </ul></ul>
       </div>
-      <div class=example><p><label>Example 1</label>: Delay the ready event until a custom plugin has loaded.</p><fieldset class=code><legend>Javascript</legend><pre>
-      $.holdReady(true);
-      $.getScript("myplugin.js", function() {
-           $.holdReady(false);
-      });
-   </pre></fieldset>
-   </div><h3><a name="jQuery.when">jQuery.when</a></h3>
-   <p class=summary>Provides a way to execute callback functions based on one or more objects, usually <a href="#category deferred-object ">Deferred</a> objects that represent asynchronous events.<div class=signature><div class='added'>Added in version <span class='version'>1.5</span></div>
-   <div class=call>jQuery.when(deferreds):Promise</div><table class=arguments><tr class=argument><td class=argdef><span class="name">deferreds</span>:<span class=type>Deferred</span></td><td> <span class=description>One or more Deferred objects, or plain JavaScript objects.</span></td></tr></table></div>
-   <div class=detail>
-      <p >If a single Deferred is passed to <span class=code>jQuery.when</span>, its Promise object (a subset of the Deferred methods) is returned by the method. Additional methods of the Promise object can be called to attach callbacks, such as <a href="#deferred.then"><span class=code>deferred.then</span></a>. When the Deferred is resolved or rejected, usually by the code that created the Deferred originally, the appropriate callbacks will be called. For example, the jqXHR object returned by <span class=code>jQuery.ajax</span> is a Deferred and can be used this way:</p><pre >$.when( $.ajax("test.aspx") ).then(function(ajaxArgs){ 
-           alert(ajaxArgs[1]); /* ajaxArgs is [ "success", statusText, jqXHR ] */
-   });</pre>
-   <p >If a single argument is passed to <span class=code>jQuery.when</span> and it is not a Deferred, it will be treated as a resolved Deferred and any doneCallbacks attached will be executed immediately. The doneCallbacks are passed the original argument. In this case any failCallbacks you might set are never called since the Deferred is never rejected. For example:</p><pre >$.when( { testing: 123 } ).done(
-      function(x){ alert(x.testing); } /* alerts "123" */
-);</pre>
-<p >In the case where multiple Deferred objects are passed to <span class=code>jQuery.when</span>, the method returns the Promise from a new "master" Deferred object that tracks the aggregate state of all the Deferreds it has been passed. The method will resolve its master Deferred as soon as all the Deferreds resolve, or reject the master Deferred as soon as one of the Deferreds is rejected. If the master Deferred is resolved, it is passed the resolved values of all the Deferreds that were passed to <span class=code>jQuery.when</span>. For example, when the Deferreds are <span class=code>jQuery.ajax()</span> requests, the arguments will be the jqXHR objects for the requests, in the order they were given in the argument list.</p>
-<p >In the multiple-Deferreds case where one of the Deferreds is rejected, <span class=code>jQuery.when</span> immediately fires the failCallbacks for its master Deferred. Note that some of the Deferreds may still be unresolved at that point. If you need to perform additional processing for this case, such as canceling any unfinished ajax requests, you can keep references to the underlying jqXHR objects in a closure and inspect/cancel them in the failCallback.</p>
+      <h2><a name="category core">Core</h2
+         ><h3><a name="jQuery.holdReady">jQuery.holdReady</a></h3>
+         <p class=summary>Holds or releases the execution of jQuery's ready event.<div class=signature><div class='added'>Added in version <span class='version'>1.6</span></div>
+         <div class=call>jQuery.holdReady(hold):undefined</div><table class=arguments><tr class=argument><td class=argdef><span class="name">hold</span>:<span class=type>Boolean</span></td><td> <span class=description>Indicates whether the ready hold is being requested or released</span></td></tr></table></div>
+         <div class=detail>
+            <p >The <span class=code>$.holdReady()</span> method allows the caller to delay jQuery's ready event. This advanced feature would typically be used by dynamic script loaders that want to load additional JavaScript such as jQuery plugins before allowing the ready event to occur, even though the DOM may be ready. This method must be called early in the document, such as in the <span class=code>&lt;head&gt;</span> immediately after the jQuery script tag. Calling this method after the ready event has already fired will have no effect. </p>
+            <p >To delay the ready event, first call <span class=code>$.holdReady(true)</span>. When the ready event should be released to execute, call <span class=code>$.holdReady(false)</span>. Note that multiple holds can be put on the ready event, one for each <span class=code>$.holdReady(true)</span> call. The ready event will not actually fire until all holds have been released with a corresponding <span class=code>$.holdReady(false)</span> <em >and</em> the normal document ready conditions are met. (See <a href="http://api.jquery.com/ready/"><span class=code>ready</span></a> for more information.)</p>
+         </div>
+               <div class=example><p><label>Example 1</label>: Delay the ready event until a custom plugin has loaded.</p><fieldset class=code><legend>Javascript</legend><pre>
+               $.holdReady(true);
+               $.getScript("myplugin.js", function() {
+                    $.holdReady(false);
+               });
+      </pre></fieldset>
+      </div><h3><a name="jQuery.when">jQuery.when</a></h3>
+      <p class=summary>Provides a way to execute callback functions based on one or more objects, usually <a href="#category deferred-object ">Deferred</a> objects that represent asynchronous events.<div class=signature><div class='added'>Added in version <span class='version'>1.5</span></div>
+      <div class=call>jQuery.when(deferreds):Promise</div><table class=arguments><tr class=argument><td class=argdef><span class="name">deferreds</span>:<span class=type>Deferred</span></td><td> <span class=description>One or more Deferred objects, or plain JavaScript objects.</span></td></tr></table></div>
+      <div class=detail>
+               <p >If a single Deferred is passed to <span class=code>jQuery.when</span>, its Promise object (a subset of the Deferred methods) is returned by the method. Additional methods of the Promise object can be called to attach callbacks, such as <a href="#deferred.then"><span class=code>deferred.then</span></a>. When the Deferred is resolved or rejected, usually by the code that created the Deferred originally, the appropriate callbacks will be called. For example, the jqXHR object returned by <span class=code>jQuery.ajax</span> is a Deferred and can be used this way:</p><pre >$.when( $.ajax("test.aspx") ).then(function(ajaxArgs){ 
+                    alert(ajaxArgs[1]); /* ajaxArgs is [ "success", statusText, jqXHR ] */
+      });</pre>
+         <p >If a single argument is passed to <span class=code>jQuery.when</span> and it is not a Deferred, it will be treated as a resolved Deferred and any doneCallbacks attached will be executed immediately. The doneCallbacks are passed the original argument. In this case any failCallbacks you might set are never called since the Deferred is never rejected. For example:</p><pre >$.when( { testing: 123 } ).done(
+            function(x){ alert(x.testing); } /* alerts "123" */
+   );</pre>
+   <p >In the case where multiple Deferred objects are passed to <span class=code>jQuery.when</span>, the method returns the Promise from a new "master" Deferred object that tracks the aggregate state of all the Deferreds it has been passed. The method will resolve its master Deferred as soon as all the Deferreds resolve, or reject the master Deferred as soon as one of the Deferreds is rejected. If the master Deferred is resolved, it is passed the resolved values of all the Deferreds that were passed to <span class=code>jQuery.when</span>. For example, when the Deferreds are <span class=code>jQuery.ajax()</span> requests, the arguments will be the jqXHR objects for the requests, in the order they were given in the argument list.</p>
+   <p >In the multiple-Deferreds case where one of the Deferreds is rejected, <span class=code>jQuery.when</span> immediately fires the failCallbacks for its master Deferred. Note that some of the Deferreds may still be unresolved at that point. If you need to perform additional processing for this case, such as canceling any unfinished ajax requests, you can keep references to the underlying jqXHR objects in a closure and inspect/cancel them in the failCallback.</p>
 </div>
 <div class=example><p><label>Example 1</label>: Execute a function after two ajax requests are successful. (See the jQuery.ajax() documentation for a complete description of success and error cases for an ajax request).</p><fieldset class=code><legend>Javascript</legend><pre>$.when($.ajax("/page1.php"), $.ajax("/page2.php")).done(function(a1,  a2){
     /* a1 and a2 are arguments resolved for the 
@@ -1265,7 +1265,6 @@ input, label { line-height: 1.5em; }
 <p class=summary>Selects all elements that are the nth-child of their parent.<div class=signature><div class='added'>Added in version <span class='version'>1.1.4</span></div>
 <div class=call>$(":nth-child(index/even/odd/equation)")</div><table class=arguments><tr class=argument><td class=argdef><span class="name">index</span>:<span class=type>Number/String</span></td><td> <span class=description>The index of each child to match, starting with <span class=code>1</span>, the string <span class=code>even</span> or <span class=code>odd</span>, or an equation ( eg. <span class=code>:nth-child(even)</span>, <span class=code>:nth-child(4n)</span> )</span></td></tr></table></div>
 <div class=detail><p >Because jQuery's implementation of <span class=code>:nth-child(n)</span> is strictly derived from the CSS specification, the value of <span class=code>n</span> is "1-indexed", meaning that the counting starts at 1. For all other selector expressions, however, jQuery follows JavaScript's "0-indexed" counting. Therefore, given a single <span class=code>&lt;ul&gt;</span> containing two <span class=code>&lt;li&gt;</span>s, <span class=code>$('li:nth-child(1)')</span> selects the first <span class=code>&lt;li&gt;</span> while  <span class=code>$('li:eq(1)')</span> selects the second.</p>
-
 <p >The <span class=code>:nth-child(n)</span> pseudo-class is easily confused with <span class=code>:eq(n)</span>, even though the two can result in dramatically different matched elements. With <span class=code>:nth-child(n)</span>, all children are counted, regardless of what they are, and the specified element is selected only if it matches the selector attached to the pseudo-class. With <span class=code>:eq(n)</span> only the selector attached to the pseudo-class is counted, not limited to children of any other element, and the (n+1)th one (n is 0-based) is selected.</p>
 <p >Further discussion of this unusual usage can be found in the <a href="http://www.w3.org/TR/css3-selectors/#nth-child-pseudo">W3C CSS specification</a>.</p>
 </div>
@@ -1523,7 +1522,6 @@ $("span:last").text("Found " + $("input:hidden").length + " hidden inputs.");
 <p >This is the inverse of <span class=code>:empty</span>. </p>
 <p >One important thing to note regarding the use of <span class=code>:parent</span> (and <span class=code>:empty</span>) is that child elements include text nodes.</p>
 <p >The W3C recommends that the <span class=code>&lt;p&gt;</span> element have at least one child node, even if that child is merely text (see <a href="http://www.w3.org/TR/html401/struct/text.html#edef-P">http://www.w3.org/TR/html401/struct/text.html#edef-P</a>). Some other elements, on the other hand, are empty (i.e. have no children) by definition:<span class=code> &lt;input&gt;</span>, <span class=code>&lt;img&gt;</span>, <span class=code>&lt;br&gt;</span>, and <span class=code>&lt;hr&gt;</span>, for example.</p>
-
 </div>
 <div class=example><p><label>Example 1</label>: Finds all tds with children, including text.</p><fieldset class=code><legend>Javascript</legend><pre>$("td:parent").fadeTo(1500, 0.3);</pre></fieldset>
 <fieldset class=css><legend>CSS</legend><pre>
@@ -1917,7 +1915,6 @@ $("body").prepend("&lt;h3&gt;" + elementCount + " elements found&lt;/h3&gt;");</
 <p class=summary>Selects all elements with the given class. <div class=signature><div class='added'>Added in version <span class='version'>1.0</span></div>
 <div class=call>$(".class")</div><table class=arguments><tr class=argument><td class=argdef><span class="name">class</span>:<span class=type>String</span></td><td> <span class=description>A class to search for. An element can have multiple classes; only one of them must match.</span></td></tr></table></div>
 <div class=detail><p >For class selectors, jQuery uses JavaScript's native <span class=code>getElementsByClassName()</span> function if the browser supports it.</p>
-
 </div>
 <div class=example><p><label>Example 1</label>: Finds the element with the class "myClass".</p><fieldset class=code><legend>Javascript</legend><pre>$(".myClass").css("border","3px solid red");</pre></fieldset>
 <fieldset class=html><legend>HTML</legend><pre>&lt;div class="notMe"&gt;div class="notMe"&lt;/div&gt;
@@ -2146,7 +2143,6 @@ $("#term-1").nextUntil(term3, "dd")
 <p ><span class="output" >0: foo</span><br ></br>
 <span class="output" >1: bar</span></p>
 <p >We can stop the loop from within the callback function by returning <span class=code>false</span>.</p>
-
 </div>
 <div class=example><p><label>Example 1</label>: Iterates over three divs and sets their color property.</p><fieldset class=code><legend>Javascript</legend><pre>
     $(document.body).click(function () {
@@ -4150,7 +4146,6 @@ var title = $("em").attr("title");
 <div class=call>attr(attributeName, function(index, attr)):jQuery</div><table class=arguments><tr class=argument><td class=argdef><span class="name">attributeName</span>:<span class=type>String</span></td><td> <span class=description>The name of the attribute to set.</span></td></tr><tr class=argument><td class=argdef><span class="name">function(index, attr)</span>:<span class=type>Function</span></td><td> <span class=description>A function returning the value to set. <span class=code>this</span> is the current element. Receives the index position of the element in the set and the old attribute value as arguments.</span></td></tr></table></div>
 <div class=detail><p >The <span class=code>.attr()</span> method is a convenient way to set the value of attributes—especially when setting multiple attributes or using values returned by a function. Consider the following image:</p>
 <pre >&lt;img id="greatphoto" src="brush-seller.jpg" alt="brush seller" /&gt;</pre>
-
 <h4 id="setting-simple-attr" >Setting a simple attribute</h4>
 <p >To change the <span class=code>alt</span> attribute, simply pass the name of the attribute and its new value to the <span class=code>.attr()</span> method:</p>
 <pre >$('#greatphoto').attr('alt', 'Beijing Brush Seller');</pre>
@@ -4752,7 +4747,6 @@ div { width:60px; height:60px; margin:5px; float:left; }
 <div class=call>css(map):jQuery</div><table class=arguments><tr class=argument><td class=argdef><span class="name">map</span>:<span class=type>Map</span></td><td> <span class=description>A map of property-value pairs to set.</span></td></tr></table></div>
 <div class=detail><p >As with the <span class=code>.prop()</span> method, the <span class=code>.css()</span> method makes setting properties of elements quick and easy. This method can take either a property name and value as separate parameters, or a single map of key-value pairs (JavaScript object notation).</p>
 <p >Also, jQuery can equally interpret the CSS and DOM formatting of multiple-word properties. For example, jQuery understands and returns the correct value for both <span class=code>.css({'background-color': '#ffe', 'border-left': '5px solid #ccc'})</span> and <span class=code>.css({backgroundColor: '#ffe', borderLeft: '5px solid #ccc'})</span>. Notice that with the DOM notation, quotation marks around the property names are optional, but with CSS notation they're required due to the hyphen in the name.</p>
-
 <p >When using <span class=code>.css()</span> as a setter, jQuery modifies the element's <span class=code>style</span> property. For example,  <span class=code>$('#mydiv').css('color', 'green')</span> is equivalent to <span class=code>document.getElementById('mydiv').style.color = 'green'</span>. Setting the value of a style property to an empty string — e.g. <span class=code>$('#mydiv').css('color', '')</span> — removes that property from an element if it has already been directly applied, whether in the HTML style attribute, through jQuery's <span class=code>.css()</span> method, or through direct DOM manipulation of the <span class=code>style</span> property. It does not, however, remove a style that has been applied with a CSS rule in a stylesheet or <span class=code>&lt;style&gt;</span> element.</p>
 <p >As of jQuery 1.6, <span class=code>.css()</span> accepts relative values similar to <span class=code>.animate()</span>. Relative values are a string starting with <span class=code>+=</span> or <span class=code>-=</span> to increment or decrement the current value. For example, if an element's padding-left was 10px, <span class=code>.css( "padding-left", "+=15" )</span> would result in a total padding-left of 25px.</p>
 <p >As of jQuery 1.4, <span class=code>.css()</span> allows us to pass a function as the property value:</p>
@@ -6804,7 +6798,6 @@ $.param({ a: { b:1,c:2 }, d: [3,4,{ e:5 }] }) // "a[b]=1&amp;a[c]=2&amp;d[]=3&am
 &lt;div id="target"&gt;
   Click here
 &lt;/div&gt;</pre>
-
 <p class="image" >
 </p>
 <p >Event handlers can then be bound to the <span class=code>&lt;div&gt;</span>:</p>
@@ -7412,7 +7405,6 @@ input { display: block; margin-bottom: .25em; }
 &lt;/div&gt;
 &lt;div id="log"&gt;&lt;/div&gt;</pre>
 <p >The style definition is present to make the target element small enough to be scrollable:</p>
-
 <p class="image" >
 </p>
 <p >The <span class=code>scroll</span> event handler can be bound to this element:</p>
@@ -7614,7 +7606,6 @@ input { display: block; margin-bottom: .25em; }
   Trigger the handler
 &lt;/div&gt;
 &lt;div id="log"&gt;&lt;/div&gt;</pre>
-
 <p >The event handler can be bound to the target:</p>
 <pre >$("#target").mousemove(function(event) {
   var msg = "Handler for .mousemove() called at ";
@@ -7825,7 +7816,6 @@ padding:0;
   Trigger the handler
 &lt;/div&gt;
 &lt;div id="log"&gt;&lt;/div&gt;</pre>
-
 <p class="image" >
 </p>
 <p >The event handler can be bound to any element:</p>
@@ -7968,7 +7958,6 @@ padding:0;
   Trigger the handler
 &lt;/div&gt;
 &lt;div id="log"&gt;&lt;/div&gt;</pre>
-
 <p class="image" >
 </p>
 <p >The event handler can be bound to any element:</p>
@@ -8031,7 +8020,6 @@ For example, consider the HTML:</p>
 &lt;div id="other"&gt;
   Trigger the handler
 &lt;/div&gt;</pre>
-
 <p class="image" >
 </p>
 <p >The event handler can be bound to any <span class=code>&lt;div&gt;</span>:</p>
@@ -8084,7 +8072,6 @@ For example, consider the HTML:</p>
 &lt;div id="other"&gt;
   Trigger the handler
 &lt;/div&gt;</pre>
-
 <p class="image" >
 <p >The event handler can be bound to any <span class=code>&lt;div&gt;</span>:</p>
 <pre >$('#target').click(function() {
@@ -8173,7 +8160,6 @@ For example, consider the HTML:</p>
 &lt;div id="other"&gt;
   Trigger the handler
 &lt;/div&gt;</pre>
-
 <p class="image" >
 <p >The event handler can be bound to any <span class=code>&lt;div&gt;</span>:</p>
 <pre >$('#target').mousedown(function() {
@@ -9358,12 +9344,10 @@ style="position: relative; left: 10px;" /&gt;</pre>
 });
 </pre>
 <p class="image" >
-
 </p>
 <p >Note that the target value of the <span class=code>height</span> property is <span class=code>'toggle'</span>. Since the image was visible before, the animation shrinks the height to 0 to hide it. A second click then reverses this transition:
 </p>
 <p class="image" >
-
 </p>
 <p >The <span class=code>opacity</span> of the image is already at its target value, so this property is not animated by the second click. Since the target value for <span class=code>left</span> is a relative value, the image moves even farther to the right during this second animation.</p>
 <p >Directional properties (<span class=code>top</span>, <span class=code>right</span>, <span class=code>bottom</span>, <span class=code>left</span>) have no discernible effect on elements if their  <span class=code>position</span> style property is <span class=code>static</span>, which it is by default.</p>
@@ -9571,10 +9555,6 @@ div {
   });
 </pre>
 <p class="image four-across" >
-
-
-
-
 </p>
 <p >With <span class=code>duration</span> set to <span class=code>0</span>, this method just changes the <span class=code>opacity</span> CSS property, so <span class=code>.fadeTo(0, opacity)</span> is the same as <span class=code>.css('opacity', opacity)</span>.</p>
 </div>
@@ -9658,10 +9638,6 @@ div { background:blue; }
   });
 });</pre>
 <p class="image four-across" >
-
-
-
-
 </p>
 <blockquote >
 <p ><span class=strong>Note: </span>To avoid unnecessary DOM manipulation, <span class=code>.fadeOut()</span> will not hide an element that is already considered hidden. For information on which elements jQuery considers hidden, see <a href="http://api.jquery.com/hidden-selector"> :hidden Selector</a>.</p>
@@ -9754,10 +9730,6 @@ button { float:left; margin:5px 10px 5px 0; }
       });
 });</pre>
 <p class="image four-across" >
-
-
-
-
 </p>
 <h4 id="easing" >Easing</h4>
 <p ><span class=strong>As of jQuery 1.4.3</span>, an optional string naming an easing function may be used. Easing functions specify the speed at which the animation progresses at different points within the animation. The only easing implementations in the jQuery library are the default, called <span class=code>swing</span>, and one that progresses at a constant pace, called <span class=code>linear</span>. More easing functions are available with the use of plug-ins, most notably the <a href="http://jqueryui.com">jQuery UI suite</a>.</p>
@@ -9826,17 +9798,9 @@ button { float:left; margin:5px 10px 5px 0; }
 </pre>
 <p >With the element initially shown, we can hide it slowly with the first click:</p>
 <p class="image four-across" >
-
-
-
-
 </p>
 <p >A second click will show the element once again:</p>
 <p class="image four-across" >
-
-
-
-
 </p>
 <h4 id="easing" >Easing</h4>
 <p ><span class=strong>As of jQuery 1.4.3</span>, an optional string naming an easing function may be used. Easing functions specify the speed at which the animation progresses at different points within the animation. The only easing implementations in the jQuery library are the default, called <span class=code>swing</span>, and one that progresses at a constant pace, called <span class=code>linear</span>. More easing functions are available with the use of plug-ins, most notably the <a href="http://jqueryui.com">jQuery UI suite</a>.</p>
@@ -9904,10 +9868,6 @@ p { clear: left; }</pre></fieldset>
 });
 </pre>
 <p class="image four-across" >
-
-
-
-
 </p>
 <h4 id="easing" >Easing</h4>
 <p ><span class=strong>As of jQuery 1.4.3</span>, an optional string naming an easing function may be used. Easing functions specify the speed at which the animation progresses at different points within the animation. The only easing implementations in the jQuery library are the default, called <span class=code>swing</span>, and one that progresses at a constant pace, called <span class=code>linear</span>. More easing functions are available with the use of plug-ins, most notably the <a href="http://jqueryui.com">jQuery UI suite</a>.</p>
@@ -9975,10 +9935,6 @@ p { clear: left; }</pre></fieldset>
   });
 });</pre>
 <p class="image four-across" >
-
-
-
-
 </p>
 <h4 id="easing" >Easing</h4>
 <p ><span class=strong>As of jQuery 1.4.3</span>, an optional string naming an easing function may be used. Easing functions specify the speed at which the animation progresses at different points within the animation. The only easing implementations in the jQuery library are the default, called <span class=code>swing</span>, and one that progresses at a constant pace, called <span class=code>linear</span>. More easing functions are available with the use of plug-ins, most notably the <a href="http://jqueryui.com">jQuery UI suite</a>.</p>
@@ -10054,16 +10010,9 @@ margin:10px; }
 <p >With the element initially shown, we can hide it slowly with the first click:
 </p>
 <p class="image four-across" >
-
-
-
-
 </p>
 <p >A second click will show the element once again:</p>
 <p class="image four-across" >
-
-
-
 </p>
 <p >The second version of the method accepts a Boolean parameter. If this parameter is <span class=code>true</span>, then the matched elements are shown; if <span class=code>false</span>, the elements are hidden. In essence, the statement:
 </p>
@@ -10129,10 +10078,6 @@ $('#clickme').click(function() {
   });
 });</pre>
 <p class="image four-across" >
-
-
-
-
 </p>
 </div>
 <div class=example><p><label>Example 1</label>: Hides all paragraphs then the link on click.</p><fieldset class=code><legend>Javascript</legend><pre>
@@ -10220,10 +10165,6 @@ $('#clickme').click(function() {
   });
 });</pre>
 <p class="image four-across" >
-
-
-
-
 </p>
 </div>
 <div class=example><p><label>Example 1</label>: Animates all hidden paragraphs to show slowly, completing the animation within 600 milliseconds.</p><fieldset class=code><legend>Javascript</legend><pre>
@@ -11812,7 +11753,6 @@ $.each(map, function(key, value) {
 <span class="output" >flammable: inflammable</span><br ></br>
 <span class="output" >duh: no duh</span>
 </p>
-
 <p >We can break the <span class=code>$.each()</span> loop at a particular iteration by making the callback function return <span class=code>false</span>. Returning <em >non-false</em> is the same as a <span class=code>continue</span> statement in a for loop; it will skip immediately to the next iteration.</p></div>
 <div class=example><p><label>Example 1</label>: Iterates through the array displaying each number as both a word and numeral</p><fieldset class=code><legend>Javascript</legend><pre>
     var arr = [ "one", "two", "three", "four", "five" ];
@@ -11913,6 +11853,5 @@ $.each(map, function(key, value) {
 <fieldset class=results><legend>Results</legend><pre>false</pre></fieldset>
 </div><h2><a name="category plugin-authoring">Plugin Authoring</h2
 >
-
 </body>
 </html>
