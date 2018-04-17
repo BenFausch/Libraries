@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i');
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #170122;
+    color: #B29DBD;
+    margin: 0 25%;
+}
+h1 {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-style: normal;
+    margin: auto auto;
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 70px;
+}
+h2, h3, .example label, .toc {
+    font-family: 'Roboto Mono', monospace;
+}
+</style><style media=print>body {
+    font-family: 'Roboto Mono', monospace;
+    widows: 3;
+    orphans: 3;
+}
+h2, h3, .example label, .toc, h1 {
+    font-family: 'Roboto Mono', monospace;
+}
+
+h2, h3, .example label {
+    page-break-after: avoid
+}
+h2 {
+    page-break-before: always
+}
+.toc h2 {
+    page-break-before: avoid;
+}
+.signature, .example .code {
+    page-break-after: avoid
+}
+a:visited, a {
+    color: #B29DBD;
+    text-decoration: none
+}
+</style><style>body {
+    margin: .25in;
+}
+.toc ul {
+    list-style: none;
+}
+h2 {
+    font-size: 16pt;
+    border-bottom: thin solid #555;
+    font-weight: normal;
+}
+h3, h3 a {
+    font-size: 36px;
+    border-bottom: thin solid #888;
+    color: #fa0e0e!important;
+}
+div.signature {
+    margin: .25in;
+    padding: 5px;
+    background-color: #222;
+}
+.detail {
+    clear: both;
+}
+.argument {
+    padding: 0px;
+    margin: 0px;
+}
+.added {
+    float: right;
+    color: #B29DBD;
+    font-size: 10pt;
+    font-weight: normal;
+}
+.version {
+    color: #B29DBD;
+}
+.code, .argument .name {
+    font-family: 'Roboto Mono', monospace;
+    color: #72254F;
+}
+.signature .call {
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+}
+.arguments {
+    clear: both;
+    width: 100%;
+    text-align: left;
+    vertical-align: top;
+}
+.argument .type {
+    font-style: italic;
+}
+.argument .argdef {
+    width: 20em;
+    font-family: 'Roboto Mono', monospace;
+    padding-right: 1em;
+    vertical-align: top
+}
+.argument .optional {
+    font-weight: bold;
+}
+.example .code {
+    color: #58bf20;
+    background-color: rgba(0,0,0,0.8);
+}
+.example .css {}
+.example .html {}
+.example .results {}
+.example label {
+    font-weight: bold;
+    font-size: small;
+}
+
+#TOC{
+      display:none;
+}
+
+
+#TOC:not(:checked)+ul {
+    height: 0px;
+    overflow: hidden;
+    transition:all 200ms;
+    opacity:0;
+}
+#TOC:checked+ul {
+    opacity:1;
+    
+    height: 100%;
+    transition:all 400ms;
+}
+
+#searchTools {
+    font-size: 20px;
+    margin:50px auto;
+    display: block;
+    width: 80%;
+    padding: 10px;
+    border: 1px solid white;
+    color: white;
+    background: navajowhite;
+    background: rgba(0,0,0,0.5);
+}
