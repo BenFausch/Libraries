@@ -26,7 +26,6 @@ h2, h3, .example label, .toc {
 h2, h3, .example label, .toc, h1 {
     font-family: 'Roboto Mono', monospace;
 }
-
 h2, h3, .example label {
     page-break-after: avoid
 }
@@ -108,7 +107,7 @@ div.signature {
 }
 .example .code {
     color: #58bf20;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 .example .css {}
 .example .html {}
@@ -117,33 +116,28 @@ div.signature {
     font-weight: bold;
     font-size: small;
 }
-
-#TOC{
-      display:none;
+#TOC {
+    display: none;
 }
-
-
 #TOC:not(:checked)+ul {
     height: 0px;
     overflow: hidden;
-    transition:all 200ms;
-    opacity:0;
+    transition: all 200ms;
+    opacity: 0;
 }
 #TOC:checked+ul {
-    opacity:1;
-    
-    height: 100%;
-    transition:all 400ms;
+    opacity: 1;
+    height: auto;
+    transition: all 400ms;
 }
-
 #searchTools {
     font-size: 20px;
-    margin:50px auto;
+    margin: 50px auto;
     display: block;
     width: 80%;
     padding: 10px;
     border: 1px solid white;
     color: white;
     background: navajowhite;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0, 0, 0, 0.5);
 }
